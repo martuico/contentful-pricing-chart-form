@@ -7,14 +7,14 @@ import '@contentful/forma-36-fcss/dist/styles.css';
 import '@contentful/forma-36-tokens/dist/css/index.css';
 import './index.css';
 
-import Field from './components/Field';
+import PricingChart from './components/PricingChart';
 
 init((sdk) => {
     const root = document.getElementById('root');
     const ComponentLocationSettings = [
         {
             location: locations.LOCATION_ENTRY_FIELD,
-            component: <Field sdk={sdk as FieldExtensionSDK} />,
+            component: <PricingChart sdk={sdk as FieldExtensionSDK} />,
         },
     ];
 
